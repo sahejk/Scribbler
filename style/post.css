@@ -20,14 +20,28 @@ body{
    font-weight: bold;
    font-size: 20px;
    width: 50%;
-
 }
 
-#editButton{
-    width: 50%;
+#comments{
+    background-color: lightgrey;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.comment{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+#edit-button{
     margin-left: 500px;
-    width: 70px;
     float: right;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 .post-content{
@@ -37,6 +51,25 @@ body{
 
 #like-button{
     margin-top: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#comment-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 120px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#showCount{
+    margin-bottom: 30px;
+
 }
 
 #allCommentsHeading{
@@ -47,17 +80,4 @@ body{
 .comment-container{
     min-height: 0px;
     overflow: hidden;
-}
-
-#comments{
-    background-color: lightgrey;
-    width: 100%;
-    margin: 1px;
-    padding: 2px;
-}
-
-.comment{
-    background-color: white;
-    margin: 1px;
-    padding: 10px;
 }

@@ -7,6 +7,11 @@ text-decoration: none;
 margin: 10px 10px 0px 10px;
 }
 
+.sub-heading {
+  font-family: 'Ubuntu Mono';
+  margin-left: 10px;
+}
+
 .modal-signin-container{
   border: 10px solid white;
 }
@@ -25,8 +30,3 @@ margin: 10px 10px 0px 10px;
   margin: 10px 10px 0px 0px;
   font-family: Arial, Helvetica, sans-serif;
  }
-
-h1{
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-}
