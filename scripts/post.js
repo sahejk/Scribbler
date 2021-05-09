@@ -4,7 +4,10 @@ let num = 0;
 
 function onEdit() {
         num += 1;
-        if (!editMode) {
+        editMode = !editMode;
+        if (editMode) {
+                document.getElementsByClassName('heading-content')[0].setAttribute("contenteditable","true");
+                document.getElementsByClassName('post-content')[0].setAttribute("contenteditable","true");
                 document.getElementById('edit-heading').style.borderWidth = '2px';
                 document.getElementById('edit-heading').style.borderStyle = 'solid';
                 document.getElementById('edit-heading').style.borderColor = 'red';
@@ -15,7 +18,6 @@ function onEdit() {
 
                 document.getElementById('edit-button').innerHTML =
                         'Save<i class="fa fa-save" style="padding-left: 4px;"></i></button>';
-                editMode = true;
         } else {
                 if (num === 2) {
                         var temp = document.getElementById('edit-heading');
@@ -31,6 +33,8 @@ function onEdit() {
                 document.getElementById('edit-button').innerHTML =
                         'Edit<i class="fa fa-edit" style="padding-left: 4px;"></i>';
                 document.getElementById('edit-button').disabled = true;
+                document.getElementsByClassName('heading-content')[0].setAttribute("contenteditable","false");
+                document.getElementsByClassName('post-content')[0].setAttribute("contenteditable","false");
         }
 }
 
@@ -50,8 +54,10 @@ window.onload = function() {
                 const { author } = queryString;
                 const { content } = queryString;
                 document.getElementsByClassName('heading-content')[0].innerHTML = heading;
+                document.getElementsByClassName('heading-content')[0].setAttribute("contenteditable","false");
                 document.getElementsByClassName('author-name')[0].innerHTML = author;
                 document.getElementsByClassName('post-content')[0].innerHTML = content;
+                document.getElementsByClassName('post-content')[0].setAttribute("contenteditable","false");
         }
         document.getElementById('comments').style.visibility = 'hidden';
 };
