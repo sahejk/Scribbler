@@ -1,0 +1,63 @@
+body{
+    position : relative;
+     bottom:0;
+}
+
+.heading-content{
+   text-align: center;
+   font-size: 25px;
+   font-weight: bolder;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.author-name{
+    font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   font-size: 20px;
+   width: 50%;
+
+}
+
+#editButton{
+    width: 50%;
+    margin-left: 500px;
+    width: 70px;
+    float: right;
+}
+
+.post-content{
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+#like-button{
+    margin-top: 20px;
+}
+
+#allCommentsHeading{
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.comment-container{
+    min-height: 0px;
+    overflow: hidden;
+}
+
+#comments{
+    background-color: lightgrey;
+    width: 100%;
+    margin: 1px;
+    padding: 2px;
+}
+
+.comment{
+    background-color: white;
+    margin: 1px;
+    padding: 10px;
+}
